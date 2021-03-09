@@ -33,7 +33,7 @@ including NoSQL and non-relational databases!
 %{__mkdir_p} .go-cache
 
 %build
-GOCACHE="$(pwd)/.go-cache" go build -v -mod=vendor -tags="%{tags}" -ldflags="-s -w -X github.com/xo/usql/text.CommandName=%{name} -X github.com/xo/usql/text.CommandVersion=%{version}" -o bin/%{name}
+GOCACHE="$(pwd)/.go-cache" go build -v -mod=vendor -tags="%{tags}" -ldflags="-X github.com/xo/usql/text.CommandName=%{name} -X github.com/xo/usql/text.CommandVersion=%{version}" -o bin/%{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
