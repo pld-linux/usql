@@ -1,20 +1,21 @@
 Summary:	Universal command-line interface for SQL databases
 Name:		usql
-Version:	0.8.1
+Version:	0.9.1
 Release:	1
 License:	MIT
 Group:		Applications/Databases
 #Source0Download: https://github.com/xo/usql/releases
 Source0:	https://github.com/xo/usql/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	74b9b417310d4ef66d8097a36e18204f
+# Source0-md5:	6c76db751944c0e3aa28ebf1b119db75
 # cd usql-%{version}
 # go mod vendor
 # cd ..
 # tar cJf usql-vendor-%{version}.tar.xz usql-%{version}/vendor
 Source1:	%{name}-vendor-%{version}.tar.xz
-# Source1-md5:	6b0529e711cd2095e2fecea9f6d214d0
+# Source1-md5:	06933d901dbade27308c28e9bc5b5d10
 URL:		https://github.com/xo/usql
 BuildRequires:	golang >= 1.14
+BuildRequires:	libicu-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 ExclusiveArch:	%{ix86} %{x8664} %{arm} aarch64 mips64 mips64le ppc64 ppc64le s390x
