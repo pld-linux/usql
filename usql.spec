@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_debugsource_packages	0
 
-%define		tags	most godror oracle sqlite_app_armor sqlite_fts5 sqlite_introspect sqlite_json1 sqlite_stat4 sqlite_userauth sqlite_vtable sqlite_icu no_adodb no_h2
+%define		tags	most godror oracle sqlite_app_armor sqlite_fts5 sqlite_introspect sqlite_json1 sqlite_stat4 sqlite_userauth sqlite_vtable sqlite_icu no_adodb no_h2 no_netezza
 
 %description
 A universal command-line interface for PostgreSQL, MySQL, Oracle
