@@ -18,10 +18,11 @@ BuildRequires:	golang >= 1.14
 BuildRequires:	libicu-devel
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
+Suggests:	oracle-instantclient-basic
 ExclusiveArch:	%{ix86} %{x8664} %{arm} aarch64 mips64 mips64le ppc64 ppc64le s390x
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		tags	most oracle sqlite_app_armor sqlite_fts5 sqlite_introspect sqlite_json1 sqlite_stat4 sqlite_userauth sqlite_vtable sqlite_icu no_adodb no_h2
+%define		tags	most godror oracle sqlite_app_armor sqlite_fts5 sqlite_introspect sqlite_json1 sqlite_stat4 sqlite_userauth sqlite_vtable sqlite_icu no_adodb no_h2
 
 %description
 A universal command-line interface for PostgreSQL, MySQL, Oracle
